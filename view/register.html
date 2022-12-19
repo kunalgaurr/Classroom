@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a768343406.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/signup.css">
+    <title>Classroom</title>
+</head>
+
+<body>
+    <nav>
+        <div class="leftSide">
+            <i class="fa-solid fa-bars-staggered" id="bar"></i>
+            <h1 class="navText">Classroom</h1>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-xmark" id="cross"></i>
+            <a href="" class="menuItem"><i class="fa-solid fa-house"></i> Classes</a>
+            <a href="" class="menuItem"><i class="fa-regular fa-calendar"></i> Callender</a>
+            <a href="" class="menuItem"><i class="fa-solid fa-box-archive"></i> Archived Classes</a>
+            <a href="" class="menuItem"><i class="fa-solid fa-gear"></i> Settings</a>
+        </div>
+        <div class="rightSide">
+            <a href="login.html" class="registeration">Log in</a>
+            <a href="register.html" class="registeration">Sign up</a>
+        </div>
+    </nav>
+    <section>
+        <div>
+            <h1 class="subText">Welcome to the Classroom</h1>
+            <div class="outerCard">
+                <div class="card">
+                    <ul>
+                        <li class="active"><br> Account Set-up</li>
+                        <li><br> Role</li>
+                        <li><br> Personal Details</li>
+                    </ul>
+                    <p class="inputText">Please enter your Email</p>
+                    <input type="email" name="" id="">
+                    <p class="inputText">Create a password</p>
+                    <input type="password" name="" id="">
+                    <p class="inputText">Re-enter the password</p>
+                    <input type="password" name="" id="">
+                    <div class="button">
+                        <p>Next</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="inputText">Please enter your role</p>
+                    <div class="dropdown" id="dropdown">
+                        <p class="selectItem">Select Role <i class="fa-solid fa-sort-down"></i></p>
+                        <div class="dropdownMenu">
+                            <p class="dropdownItem dropdownActive" id="student">Student</p>
+                            <p class="dropdownItem" id="Faculty">Faculty</p>
+                        </div>
+                    </div>
+                    <p class="inputText">Please enter you assignd ID number</p>
+                    <input type="text" name="" id="">
+                    <div class="button">
+                        <p>Previous</p>
+                    </div>
+                    <div class="button">
+                        <p>Next</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="inputText">Enter your first name</p>
+                    <input type="text" name="" id="">
+                    <p class="inputText">Enter your last name</p>
+                    <input type="text" name="" id="">
+                    <p class="inputText">Enter you mobile number</p>
+                    <input type="number" name="" id="phoneNumber">
+                    <p class="demo"></p>
+                    <a href="home.html" class="home">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/common.js"></script>
+    <script src="script/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #4C2240, #084871);
+    color: #EFF5F5;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainText{
+    font-size: 3rem;
+    margin: 1rem;
+}
+.subText{
+    margin: 1rem;
+    font-size: 2rem;
+}

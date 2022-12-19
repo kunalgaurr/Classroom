@@ -1,0 +1,121 @@
+h1.subText{
+    text-align: center;
+}
+.outerCard{
+    height: 70vh;
+    width: 40vw;
+}
+.card{
+    height: 70vh;
+    width: 40vw;
+    position: relative;
+    background: linear-gradient(-45deg, #084871, black);
+    box-shadow: 5px 5px 20px #494949;
+    padding: 1rem;
+    border: 3px solid #EFF5F5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+li{
+    text-align: center;
+    padding: 1rem;
+}
+.active{
+    padding: 20px;
+}
+li::before{
+    content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+li::after{
+    content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+}
+li:first-child:after {
+	content: none; 
+}
+li.active:before, li.active:after{
+	background: linear-gradient(-45deg, #902f98, #3b2065);
+	color: white;
+}
+li:nth-child(1):before{
+    content: "1";
+}
+li:nth-child(2):before{
+    content: "2";
+}
+li:nth-child(3):before{
+    content: "3";
+}
+div.button, button{
+    padding: 0 1.5rem;
+    border: 2px solid #EFF5F5;
+    color: #EFF5F5;
+    background: none;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+button{
+   padding: 1rem; 
+}
+div.button:hover, button:hover{
+    background: linear-gradient(-45deg, #902f98, #3b2065);
+}
+.dropdown{
+    width: 250px;
+    padding: 0px 10px;
+    border: 3px solid #EFF5F5;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #EFF5F5;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.dropdown:hover{
+    background: linear-gradient(-45deg, #902f98, #3b2065);
+}
+.dropdownMenu{
+    display: none;
+    position: absolute;
+}
+.dropdownItem{
+    border: 1px solid #EFF5F5;
+    width: 250px;
+    height: 20px;
+    padding: 0.5rem;
+    margin: 0;
+    background: linear-gradient(-45deg, #902f98, #3b2065);
+    left: 0;
+}
+.dropdownItem:hover{
+    background: linear-gradient(-45deg, #4C2240, #084871);
+}
+

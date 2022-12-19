@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Raleway:wght@200;300&family=Roboto+Mono&family=Roboto:wght@300&family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.leftSide{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.leftSide h1.navText{
+    padding: 0 2rem;
+    color: #EFF5F5;
+}
+.leftSide i{
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: #EFF5F5;
+    padding: 0.5rem;
+}
+.leftSide i:hover{
+    background: linear-gradient(-45deg, #4C2240, #084871);
+}
+.menu{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    width: 20vw;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-color: #EFF5F5;
+}
+.animation{
+    animation: menuAnimation;
+    transition-duration: 0.5s;
+}
+@keyframes menuAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1);
+    }
+}
+.menu i.fa-xmark{
+    font-size: 2rem;
+    color: #497174;
+    padding: 1rem;
+    border-radius: 50px;
+    content: icon;
+}
+.menu i.fa-xmark:hover{
+    background-color: #D6E4E5;
+}
+.menuItem{
+    padding: 1rem 0 1rem 0;
+    color: #497174;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+.menuItem i{
+    margin: 0 2rem;
+}
+.menuItem:hover{
+    background-color: #D6E4E5;
+}
+.rightSide{
+    padding: 0 2rem;
+}
+.registeration{
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid #EFF5F5;
+    color: #EFF5F5;
+}
+.registeration:hover{
+    background: linear-gradient(-45deg, #902f98, #3b2065);
+    transition: 0.5s ease-in-out;
+}
